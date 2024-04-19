@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Variables
+        Las variables son espacios reservados en memoria que 
+        almacenan un dato. Estos tiene tres atributos principales:
+        tipo de dato, nombre y valor.
+        Los tipos de dato que puede poseer una variable son: undefined
+        boolean, string, symbol, number y object
+        Estos tipos de datos definirán el contenido de la variable
+        a utilizar.
+        Existen tres acciones que se realizan sobre las 
+        variables: declaración, inicialización y asignación
+        La declaración consiste en asignar un espacio
+        en memoria con un nombre determinado y un tipo
+        de dato (por defecto será undefined). Podemos ver el tipo
+        de una variable con la funcion typeof(variable)
+        */
+
+        let variable;
+        typeof(variable);
+        variable=8;
+        variable="Hola";
+
+        /*
+        Para poder declarar una variable podremos utilizar las
+        palabras reservadas "var" o "let". Por convención, se 
+        recomienda utilizar la palabra reservada "let"
+        ya que está definida para el formato ES6 que trabajaremos
+        en este curso (aun cuando se presente de forma separada
+        en el segundo semestre junto con las novedades de ES6)
+        Además tenemos un tipo especial de variable llamado 
+        constante que se define con la palabra reservada "const"
+        Las constantes son aquellas que no pueden cambiar ni de
+        tipo ni de valor a lo largo de toda la ejecución de la
+        aplicación.
+        La inicialización consiste en darle un valor inicial a la
+        variable. Utilizando este formato, también le estaremos 
+        asignando un tipo de dato implicitamente. En el caso de 
+        las constantes, estas deben ser inicializadas de manera
+        obligatoria.
+        La asignación consiste en darle un valor a la variable 
+        luego de que ya fue inicializada (de hecho la inicialización
+        es una asignación inicial)
+        Ese valor lo podemos asignar al momento de la declaración
+        o de manera posterior utilizando en operador = asignando
+        el valor de la derecha del operador hacia la variable 
+        puesta a la izquierda del mismo.
+        En el caso de las constantes, no podemos asignarles un 
+        nuevo valor.
+        */
+        const variable1="Hola"; //Declaración e inicialización de una constante
+        let variable2; //Declaración de variable
+        console.log(typeof(variable2));
+        let primeraVariable; //Declaración de variable
+        primeraVariable = 10; // Asignación de variable
+        console.log(typeof(primeraVariable));
+        console.log(primeraVariable);
+
+        let segundaVariable = "Backend"; //Declaración e inicialización
+        console.log(segundaVariable);
+        /*La escritura de los nombres de las variables
+        tienen ciertas condiciones:
+        1) Solo pueden comenzar con letras (el signo $ tambien es
+        considerado una letra) o guión bajo (_)
+        2) Pueden contener números pero no como primer caracter
+        3) No pueden contener caracteres especiales excepto
+        el guión bajo
+        4) Cuando tengo un nombre de variable compuesto por
+        dos o mas palabras por convención utilizamos la nomenclatura 
+        camelCase (la primer palabra en minúsculas y las demás 
+        comienzan con mayúscula)
+        Además, las variables son Case-sensitive lo que significa
+        que la variable llamada "primeraVariable" será distinta
+        a la variable "PrimeraVariable"
+        */
+        
+        //Esta asignación sobreescribe el valor anterior
+        segundaVariable = 40;
+        console.log(segundaVariable);
+        /*
+        Puedo redefinir el contenido de variables de manera 
+        posterior a su asignación pero la variable solo puede
+        almacenar un dato de manera simultánea. El valor
+        anterior de la variable se pierde
+        */
+    </script>
+</body>
+</html>

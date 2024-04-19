@@ -1,0 +1,11 @@
+let num1 = 20, num2 = 6;
+let suma = 40 + 20;
+let resta = 40 - 20;
+let multiplicacion = 40 * 20;
+let division = 40 / 20;
+let resto = 40 % 20;
+console.log(suma);
+console.log(resta);
+console.log(multiplicacion);
+console.log(division);
+console.log(resto);
