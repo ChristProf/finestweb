@@ -6,3 +6,13 @@ if (numero > 0) {
     console.log("Es menor o igual a cero");
 }
 
+if (condition) {
+    
+}
+
+
+if (condition) {
+    
+} else {
+    
+}

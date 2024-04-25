@@ -2,9 +2,14 @@ let num1 = parseInt(prompt("Ingrese un numero"));
 let texto = prompt("Ingrese otro numero");
 let num2 = parseInt(prompt("Ingrese otro numero"));
 
+let condicion = num1 < num2;
+
+
+
 //Identificar si el numero es positivo, negativo o neutro
 /*
 Operadores relacionales
+
 
 < menor que
 > mayor que
