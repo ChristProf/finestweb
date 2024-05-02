@@ -1,4 +1,4 @@
-let Numero, suma;
+let Numero, suma=0;
 
 for (let i = 0; i < 10; i++) {
     Numero = parseInt(prompt("Ingrese un numero"));
