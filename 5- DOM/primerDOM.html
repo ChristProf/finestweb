@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <p id="parrafo">Buenas tardes</p>
+    <div id="imagen">
+        <img src="imagen1.jpg" alt="primera imagen">
+    </div>
+    <button onclick="cambiarImagen()">Cambiar imagen</button>
+    <script>
+        //document.getElementById("imagen").innerHTML="<img src='imagen2.jpg' alt='segunda imagen'>";
+        function mayorQueTresNumeros(num1, num2, num3){
+            return num1>num2?num1>num3?num1:num3:num2>num3?num2:num3;
+        }
+        function cambiarImagen(){
+            let ima=document.getElementById("imagen").getElementsByTagName("img")[0];
+            let nueva="imagen2.jpg"
+            if(ima.src.indexOf(nueva) !== -1){
+                ima.src="imagen1.jpg"
+            }else{
+                ima.src="imagen2.jpg"
+            }
+        }
+        let num1=4, num2=8, num3=2;
+        alert("El mayor es "+mayorQueTresNumeros(num1, num2, num3));
+    </script>
+</body>
+</html>

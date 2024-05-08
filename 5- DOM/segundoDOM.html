@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function suma(num1, num2){
+            return num + num2;
+        }
+
+        let resultado = suma;
+        //document.write(resultado+"<br>");
+        const funcion = function (num1, num2){
+            return num1 * num2;
+        }
+        
+
+        //document.write(funcion(2,3));
+        const persona = {
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 89,
+            colorDeOjos: "Azul",
+            nombreCompleto: function(){
+                return this.nombre + " " + this.apellido
+            }
+        }
+        document.write(persona["colorDeOjos"]+"<br>");
+        document.write("Hola señor "+persona.nombreCompleto());
+        
+
+    </script>
+</body>
+</html>
