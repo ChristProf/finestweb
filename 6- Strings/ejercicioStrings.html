@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Crear un script que solicite un texto y 
+        una cadena de caracteres a buscar.
+        Al finalizar, muestre la cantidad de apariciones 
+        de la cadena dentro del texto
+        Variables: cadena, texto, cantidad
+        */
+        let texto = prompt("Ingrese un texto");
+        let cadena = prompt("Ingrese cadena");
+        let resul1 = texto.matchAll(cadena);
+        let resul2 = texto.matchAll(cadena);
+        let cant=0;
+        alert(Array.from(resul1));
+        for (variable of resul2){
+            cant++;
+        }
+        
+        alert(cant);
+    </script>
+</body>
+</html>
