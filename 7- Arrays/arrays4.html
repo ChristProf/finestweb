@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <script>
+        function mostrarArreglo(arreglo){
+            let largo=arreglo.length;
+            for (let i=0; i < largo; i++){
+                document.write(arreglo[i]);
+                document.write("<br>");
+            }
+        }
+        let arreglo=["Uno", "Dos", "Tres", "Cuatro"];
+        //arreglo.sort()
+        mostrarArreglo(arreglo);
+        document.write("<br>");
+        mostrarArreglo(arreglo.sort());
+        document.write("<br>");
+        mostrarArreglo(arreglo.reverse());
+        document.write("<br>");
+        mostrarArreglo(arreglo);
+
+
+        function mostrarMatriz(matriz){
+            let cantFilas=3, cantColumnas=3;
+            for(let i=0; i < cantFilas; i++){
+                for(let j=0; j < cantColumnas; j++){
+                    document.write(matriz[i][j]+" ");
+                }
+                document.write("<br>");
+            }
+        }
+        function mostrarMenu(){
+            document.write("Ingrese una opcion<br>");
+            document.write("1) Ingresar matriz 1<br>");
+            document.write("2) Ingresar matriz 2<br>");
+            document.write("3) Sumar matrices<br>");
+            document.write("4) Listar matrices<br>")
+            let elemento=document.createElement("input");
+            document.appendChild(elemento)
+        }
+        function menuPrincipal(opcion){
+            do{
+
+            }while(opcion!=0);
+        }
+
+
+        let matriz=[ 
+            [1, 2, 3], 
+            [4, 5, 6], 
+            [7, 8, 9]
+        ]
+        //mostrarMatriz(matriz);
+        mostrarMenu()
+        /*
+
+        Crear un script que implemente una funcion con las siguientes 
+        características:
+        Deberá implementar el siguiente menú
+        1) Ingresar matriz 1
+        2) Ingresar matriz 2
+        3) Sumar matrices
+        4) Listar matrices
+
+        */
+
+
+
+
+    </script>
+</body>
+</html>

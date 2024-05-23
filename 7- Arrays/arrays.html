@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <script>
+        const arreglo=["Dato1", "Dato2", "Dato3", "Dato4", "Dato5"];
+        
+        function mostrarArreglo(arreglo){
+            let largo=arreglo.length;
+            for (let i=0; i < largo; i++){
+                document.write(arreglo[i]);
+                document.write("<br>");
+            }
+        }
+
+        function mostrarElementoPorIndice(arreglo, indice){
+            document.write(arreglo.at(indice));
+        }
+
+        mostrarArreglo(arreglo);
+        let indice = parseInt(prompt("Ingrese un indice"));
+        if (indice < 0){
+            document.write("No corresponde")
+        }else{
+            if(indice>=arreglo.length){
+                document.write("No corresponde")
+            }else{
+                mostrarElementoPorIndice(arreglo, indice)
+            }
+        }
+
+
+    </script>
+</body>
+</html>

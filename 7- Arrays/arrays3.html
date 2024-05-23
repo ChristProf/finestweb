@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <script>
+        function mostrarArreglo(arreglo){
+            let largo=arreglo.length;
+            for (let i=0; i < largo; i++){
+                document.write(arreglo[i]);
+                document.write("<br>");
+            }
+        }
+        let arreglo=["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
+        let resul=arreglo.copyWithin(2/*Destino*/,0/*Origen*/);
+        mostrarArreglo(arreglo);
+        document.write("<br>");
+        document.write(resul);
+        document.write("<br>");
+        document.write(arreglo.indexOf("Siete"));
+        document.write("<br>");
+        document.write(arreglo.includes("Seis"));
+        
+    </script>
+</body>
+</html>
