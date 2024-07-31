@@ -1,0 +1,16 @@
+#pokemon-info {
+    border: 1px solid #ddd;
+    padding: 16px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+#pokemon-info img {
+    max-width: 100px;
+}
+.pokemon-data {
+    margin: 8px 0;
+}
+h1{
+    text-align: center;
+}

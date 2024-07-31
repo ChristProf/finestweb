@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <textarea id="ingreso">
+    </textarea>
+    <button onclick="crearTabla()">Crear Tabla</button>
+    <div id="tabla"></div>
+    <script>
+        function crearTabla() {
+            const textarea = document.getElementById('ingreso');
+            const jsonString = textarea.value;
+        
+            let datos;
+            datos = JSON.parse(jsonString);
+        
+            const claves = Object.keys(datos);
+        
+            const tabla = document.createElement('table');
+        
+            const tr = document.createElement('tr');
+            
+            for (let clave in claves){
+                const th = document.createElement('th');
+                th.innerHTML = claves[clave];
+                tr.appendChild(th);
+            }
+            
+        
+            tabla.appendChild(tr);
+
+            const tr2 = document.createElement('tr');
+            
+            for (let clave in claves){
+                const td = document.createElement('td');
+                td.innerHTML = datos[claves[clave]];
+                tr2.appendChild(td);
+            }
+          
+            tabla.appendChild(tr2);
+
+            const tablaDiv = document.getElementById('tabla');
+            tablaDiv.innerHTML = '';  
+            tablaDiv.appendChild(tabla);
+        }
+        
+    </script>
+</body>
+</html>

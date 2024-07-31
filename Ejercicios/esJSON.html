@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <textarea name="ingreso" id="ingreso" cols="120" rows="80"></textarea>
+    <button onclick="esJson()">Comprobar</button>
+    <script>
+        function esJson() {
+            let resultado;
+            const textarea = document.getElementById('ingreso');
+            const jsonString = textarea.value;
+            
+            try{
+                JSON.parse(jsonString);
+                resultado=true;
+            }catch(e){
+                resultado=false;
+            }
+            window.alert(resultado);
+        }
+        
+    </script>
+</body>
+</html>
